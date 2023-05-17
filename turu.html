@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Kuru kuru~~~~~</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+		.spin {
+			animation: spin 15s linear infinite;
+		}
+
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+    <style>
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; /* Mengisi tinggi layar penuh */
+        }
+        #container2 {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin: 10px; /* Jarak dari tepi layar */
+  }
+  #container3 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 10px; /* Jarak dari tepi layar */
+  }
+  #container4 {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 10px; /* Jarak dari tepi layar */
+  }
+  #container5 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 10px;
+  }
+      </style>
+      <style>
+        *
+    button {
+        background-color: #7121a0; /* warna background */
+        border: none;
+        color: white; /* warna teks */
+        padding: 10px 20px; /* ukuran tombol */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%; /* membuat tombol menjadi lingkaran */
+      }
+
+      </style>
+</head>
+<body  style="background: linear-gradient(45deg,#a801ff, #0006ff,#a801ff);">
+    <div id="container">
+    <img class="spin" src="source/gmbr/output-onlinegiftools.gif" height="250" width="250">
+        <audio id="myAudio" loop>
+            <source src="source/music/y2mate.com - Kuru Kuru But Its A Song.mp3" type="audio/mpeg">
+        </audio>
+        <button onclick="playPause()">&#9654;</button>
+        <script>
+            var audio = document.getElementById("myAudio");
+            
+            function playPause() {
+              if (audio.paused) {
+                audio.play();
+              } else {
+                audio.pause();
+              }
+            }
+            </script>   
+    </div>
+    
+
+    <div id="container2">
+        <img class="spin" src="source/gmbr/output-onlinegiftools (1).gif" height="200" width="200"> 
+    </div>
+    <div id="container3">
+        <img class="spin" src="source/gmbr/output-onlinegiftools (1).gif" height="200" width="200"> 
+    </div>
+    <div id="container4">
+        <img class="spin" src="source/gmbr/output-onlinegiftools (1).gif" height="200" width="200"> 
+    </div>
+    <div id="container5">
+        <img class="spin" src="source/gmbr/output-onlinegiftools (1).gif" height="200" width="200"> 
+    </div>
+</body>
+</html>
